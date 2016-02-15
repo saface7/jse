@@ -14,7 +14,21 @@ public class Reportcard {
 		int math = scanner.nextInt();
 		int sci = scanner.nextInt();
 		int sum = eng + kor + math + sci ;
-		System.out.println("당신의 이름은 " + name + "이고 과목별 총점은 " + sum + ", 평균은 " + sum/4 + " 입니다.");
+		double avg =  sum/4;
+		
+		String result = name + "의 과목별 총점은 " + sum + "점 이고, 평균은 " + avg + " 점으로 ";
+		
+		if (avg >= 90.0) {
+			System.out.println(result + "장학생 입니다.");
+			
+		} else if(avg>=60){
+			System.out.println( result +  "합격입니다.");
+			
+		}
+		else{
+			System.out.println( result + "불합격입니다.");
+			
+		}
 	}
 
 }
