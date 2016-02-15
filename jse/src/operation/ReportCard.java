@@ -9,12 +9,7 @@ public class ReportCard {
 		
 		System.out.println("이름을 입력하세요");
 		String name = scanner.next();
-		
-		System.out.println("과목을 입력하세요");
-		String kor = scanner.next();
-		String math = scanner.next();
-		String eng = scanner.next();
-		
+
 		System.out.println("국어점수를 입력하세요");
 		int korscore = scanner.nextInt();
 		System.out.println("수학점수를 입력하세요");
@@ -23,12 +18,16 @@ public class ReportCard {
 		int engscore = scanner.nextInt();
 		
 		int sum = korscore + mathscore + engscore;
-		int avg = sum/3;
+		double avg = sum/3;
+		String result = name + "Toral " + sum + "점이고" + avg+ "점으로";
 		
-		System.out.println(avg);
-		
-		
-		
+		if (avg >= 90.0) {
+			System.out.println(result + "장학생입니다");
+			
+		} else if(avg >= 60){
+			System.out.println(result + "합격입니다");
+		}
+		else
+			System.out.println(result + "불합격입니다");	
 	}
-
 }
