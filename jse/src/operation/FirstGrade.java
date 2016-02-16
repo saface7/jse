@@ -25,11 +25,14 @@ public class FirstGrade {
 		String thrname = scanner.next();
 		System.out.println("세번째 학생 평균을 입력하세요");
 		int avg3 = scanner.nextInt();
-		String first = null;
-		
+		String first = null;//지역변수 local variable
+		//지역변수는 반드시 초기화를 해야한다.
+		//초기화란 최초 지역변수를 선언할 때 null값을 할당하는 것 
+		//변수는 카멜표기법(낙타)으로 표기한다.fitstname
+		//class는 파스칼 표기법으로 표기한다.FirstName
 		if (avg1 > avg2 && avg1 > avg3) {
 			first = onename;			
-		} else if(avg2 > avg1 && avg2 > avg3){
+		} else if(avg2 > avg3){
 			first = twoname;
 		} else{
 			first = thrname;
