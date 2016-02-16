@@ -1,11 +1,7 @@
-/switchcase/
-<<<<<<< HEAD
-/unary/
-/forloop/
 /array/
-/oop/
 /bank/
-=======
-/Unary/
 /forloop/
->>>>>>> branch 'master' of https://github.com/saface7/jse.git
+/oop/
+/operation/
+/switchcase/
+/unary/
