@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 /Reportcard.class
 /ScannerEx.class
 /Variable.class
 /Kaup.class
 /TimeCal.class
+=======
+/ReportCard.class
+/ScannerEx.class
+/Variable.class
+/Kaup.class
+/TimeCalc.class
+>>>>>>> branch 'master' of https://github.com/saface7/jse.git
 /FirstGrade.class
